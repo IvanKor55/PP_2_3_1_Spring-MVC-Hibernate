@@ -66,9 +66,5 @@ public class User {
                 ", age=" + age +
                 '}';
     }
-
-    public void setAge(String email) {
-        this.age = age;
-    }
 }
 
