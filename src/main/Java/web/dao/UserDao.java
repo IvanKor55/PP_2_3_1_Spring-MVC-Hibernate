@@ -1,13 +1,13 @@
-package web.hibernate.service;
+package web.dao;
 
-import web.hibernate.model.User;
+import web.model.User;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserDao {
     void addUser(User user);
     void editUser(User user);
     void deleteUser(User user);
     List<User> getListUsers();
-    User getUser (Integer id);
+    User getUser (Long id);
 }

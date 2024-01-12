@@ -1,15 +1,15 @@
-package web.hibernate.dao;
+package web.dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
-import web.hibernate.model.User;
+import web.model.User;
 
 import java.util.List;
 
 @Repository
 public class UserDaoImpl implements UserDao {
-    private final String LIST_USER = "SELECT u FROM User u";
+    private static final String LIST_USER = "SELECT u FROM User u";
 
     @PersistenceContext
     private EntityManager entityManager;

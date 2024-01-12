@@ -1,4 +1,4 @@
-package web.hibernate.model;
+package web.model;
 
 import jakarta.persistence.*;
 
